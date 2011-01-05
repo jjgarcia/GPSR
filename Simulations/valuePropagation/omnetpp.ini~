@@ -1,0 +1,82 @@
+# ****************************************************************************
+# *  Copyright: National ICT Australia,  2007 - 2010                         *
+# *  Developed at the ATP lab, Networked Systems research theme              *
+# *  Author(s): Athanassios Boulis, Yuriy Tselishchev                        *
+# *  This file is distributed under the terms in the attached LICENSE file.  *
+# *  If you do not find this file, copies can be found by writing to:        *
+# *                                                                          *
+# *      NICTA, Locked Bag 9013, Alexandria, NSW 1435, Australia             *
+# *      Attention:  License Inquiry.                                        *
+# *                                                                          *
+# ***************************************************************************/
+
+[General]
+
+# ==============================================
+# Always include the main Castalia.ini file
+# ==============================================
+
+include ../Parameters/Castalia.ini
+
+sim-time-limit = 100s
+
+SN.field_x = 3		# meters 
+SN.field_y = 50		# meters 
+
+SN.numNodes = 4
+#SN.deployment = uniform
+#SN.deploymentType = "0"
+
+#SN.deployment = "uniform"
+SN.node[0].xCoor = 0
+SN.node[0].yCoor = 0
+
+SN.node[1].xCoor = 1
+SN.node[1].yCoor = 10
+
+SN.node[2].xCoor = 1
+SN.node[2].yCoor = 30
+
+SN.node[3].xCoor = 1
+SN.node[3].yCoor = 50
+
+
+SN.node[0].MobilityManagerName = "NoMobilityManager"
+SN.node[0].MobilityManager.updateInterval = 100
+
+
+include ../Parameters/PhysicalProcess/node0_asssignedValue40.ini
+
+SN.node[*].Communication.Radio.RadioParametersFile = "../Parameters/Radio/CC2420.txt"
+SN.node[*].Communication.MACProtocolName = "BypassMAC" 
+SN.node[*].ApplicationName = "ValuePropagation"
+
+SN.node[*].Communication.MAC.listenInterval = 10
+SN.node[*].Communication.MAC.dutyCycle = 0.1
+SN.node[*].Communication.MAC.beaconIntervalFraction = 1.0
+
+SN.node[*].Communication.Radio.TxOutputPower = "-5dBm"
+
+
+
+# If nodes are moving, so seeing their location may be useful
+SN.node[*].MobilityManager.collectTraceInfo = true
+
+# ==========================================================
+# The default configuration sets node 0 to be mobile, while 
+# sending nodes 1 and 2 are static. Receiving node 0 will 
+# move in diagonal pattern, allowing it to receive packets 
+# from node 1 and some time later from node 2. This will be
+# clearly seen on the trace file and the collected output.
+# ==========================================================
+
+
+[Config varyDutyCycle]
+SN.node[*].Communication.MAC.dutyCycle = ${dutyCycle= 0.02, 0.05, 0.1}
+
+[Config varyBeacon]
+SN.node[*].Communication.MAC.beaconIntervalFraction = ${beaconFraction= 0.2, 0.5, 0.8}
+
+[Config varyTxPower]
+SN.node[*].Communication.Radio.TxOutputPower = ${TXpower="-1dBm","-5dBm"}
+

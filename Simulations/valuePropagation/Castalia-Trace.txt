@@ -1,0 +1,230 @@
+
+0               SN.node[0].MobilityManager               initial location(x:y:z) is 0:0:0
+0               SN.node[1].MobilityManager               initial location(x:y:z) is 1:10:0
+0               SN.node[2].MobilityManager               initial location(x:y:z) is 1:30:0
+0               SN.node[3].MobilityManager               initial location(x:y:z) is 1:50:0
+0.003536268058  SN.node[1].Communication.Routing         GPSR ---> startup function
+0.003536268058  SN.node[1].Communication.Routing         GPSR ---> Node Location[x,y]:[1;10]
+0.027541547223  SN.node[0].Communication.Routing         GPSR ---> startup function
+0.027541547223  SN.node[0].Communication.Routing         GPSR ---> Node Location[x,y]:[0;0]
+0.035409203716  SN.node[2].Communication.Routing         GPSR ---> startup function
+0.035409203716  SN.node[2].Communication.Routing         GPSR ---> Node Location[x,y]:[1;30]
+0.041997200209  SN.node[3].Communication.Routing         GPSR ---> startup function
+0.041997200209  SN.node[3].Communication.Routing         GPSR ---> Node Location[x,y]:[1;50]
+8.053590999727  SN.node[1].Communication.Routing         GPSR: ---> INTER_BEACON_T timer, Node [1], rand=0.548814
+8.054058999726  SN.node[0].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+8.054058999726  SN.node[0].Communication.Routing         GPSR----> BeaconPacket received from:1
+8.054058999726  SN.node[0].Communication.Routing         GPSR ---> Updating route Table
+8.054058999726  SN.node[0].Communication.Routing         GPSR ---> Graph planarizeed.
+8.054058999726  SN.node[0].Communication.Routing         GPSR ---> Node added to route table - Node [0]: [1;1;10]
+8.054058999726  SN.node[2].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+8.054058999726  SN.node[2].Communication.Routing         GPSR----> BeaconPacket received from:1
+8.054058999726  SN.node[2].Communication.Routing         GPSR ---> Updating route Table
+8.054058999726  SN.node[2].Communication.Routing         GPSR ---> Graph planarizeed.
+8.054058999726  SN.node[2].Communication.Routing         GPSR ---> Node added to route table - Node [2]: [1;1;10]
+8.078024433393  SN.node[0].Communication.Routing         GPSR: ---> INTER_BEACON_T timer, Node [0], rand=0.592845
+8.078492433392  SN.node[1].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+8.078492433392  SN.node[1].Communication.Routing         GPSR----> BeaconPacket received from:0
+8.078492433392  SN.node[1].Communication.Routing         GPSR ---> Updating route Table
+8.078492433392  SN.node[1].Communication.Routing         GPSR ---> Graph planarizeed.
+8.078492433392  SN.node[1].Communication.Routing         GPSR ---> Node added to route table - Node [1]: [0;0;0]
+8.08582130667   SN.node[2].Communication.Routing         GPSR: ---> INTER_BEACON_T timer, Node [2], rand=0.715189
+8.086289306669  SN.node[1].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+8.086289306669  SN.node[1].Communication.Routing         GPSR----> BeaconPacket received from:2
+8.086289306669  SN.node[1].Communication.Routing         GPSR ---> Updating route Table
+8.086289306669  SN.node[1].Communication.Routing         GPSR ---> Graph planarizeed.
+8.086289306669  SN.node[1].Communication.Routing         GPSR ---> Node added to route table - Node [1]: [2;1;30]
+8.086289306669  SN.node[3].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+8.086289306669  SN.node[3].Communication.Routing         GPSR----> BeaconPacket received from:2
+8.086289306669  SN.node[3].Communication.Routing         GPSR ---> Updating route Table
+8.086289306669  SN.node[3].Communication.Routing         GPSR ---> Graph planarizeed.
+8.086289306669  SN.node[3].Communication.Routing         GPSR ---> Node added to route table - Node [3]: [2;1;30]
+8.091948915295  SN.node[3].Communication.Routing         GPSR: ---> INTER_BEACON_T timer, Node [3], rand=0.844266
+8.092416915294  SN.node[2].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+8.092416915294  SN.node[2].Communication.Routing         GPSR----> BeaconPacket received from:3
+8.092416915294  SN.node[2].Communication.Routing         GPSR ---> Updating route Table
+8.092416915294  SN.node[2].Communication.Routing         GPSR ---> Graph planarizeed.
+8.092416915294  SN.node[2].Communication.Routing         GPSR ---> Node added to route table - Node [2]: [3;1;50]
+20.521624462424 SN.node[1].Communication.Routing         GPSR: ---> INTER_BEACON_T timer, Node [1], rand=0.602763
+20.522092462423 SN.node[0].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+20.522092462423 SN.node[0].Communication.Routing         GPSR----> BeaconPacket received from:1
+20.522092462423 SN.node[0].Communication.Routing         GPSR ---> Updating route Table
+20.522092462423 SN.node[0].Communication.Routing         GPSR ---> RouteTable entry updated- Node [0]: [1;1;10]
+20.522092462423 SN.node[2].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+20.522092462423 SN.node[2].Communication.Routing         GPSR----> BeaconPacket received from:1
+20.522092462423 SN.node[2].Communication.Routing         GPSR ---> Updating route Table
+20.522092462423 SN.node[2].Communication.Routing         GPSR ---> RouteTable entry updated- Node [2]: [1;1;10]
+20.90119275796  SN.node[0].Communication.Routing         GPSR: ---> INTER_BEACON_T timer, Node [0], rand=0.857946
+20.901660757959 SN.node[1].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+20.901660757959 SN.node[1].Communication.Routing         GPSR----> BeaconPacket received from:0
+20.901660757959 SN.node[1].Communication.Routing         GPSR ---> Updating route Table
+20.901660757959 SN.node[1].Communication.Routing         GPSR ---> RouteTable entry updated- Node [1]: [0;0;0]
+21.893802529296 SN.node[2].Communication.Routing         GPSR: ---> INTER_BEACON_T timer, Node [2], rand=0.544883
+21.894270529295 SN.node[1].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+21.894270529295 SN.node[1].Communication.Routing         GPSR----> BeaconPacket received from:2
+21.894270529295 SN.node[1].Communication.Routing         GPSR ---> Updating route Table
+21.894270529295 SN.node[1].Communication.Routing         GPSR ---> RouteTable entry updated- Node [1]: [2;1;30]
+21.894270529295 SN.node[3].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+21.894270529295 SN.node[3].Communication.Routing         GPSR----> BeaconPacket received from:2
+21.894270529295 SN.node[3].Communication.Routing         GPSR ---> Updating route Table
+21.894270529295 SN.node[3].Communication.Routing         GPSR ---> RouteTable entry updated- Node [3]: [2;1;30]
+22.938199105008 SN.node[3].Communication.Routing         GPSR: ---> INTER_BEACON_T timer, Node [3], rand=0.847252
+22.938667105007 SN.node[2].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+22.938667105007 SN.node[2].Communication.Routing         GPSR----> BeaconPacket received from:3
+22.938667105007 SN.node[2].Communication.Routing         GPSR ---> Updating route Table
+22.938667105007 SN.node[2].Communication.Routing         GPSR ---> RouteTable entry updated- Node [2]: [3;1;50]
+33.42395731588  SN.node[1].Communication.Routing         GPSR: ---> INTER_BEACON_T timer, Node [1], rand=0.423655
+33.424425315879 SN.node[0].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+33.424425315879 SN.node[0].Communication.Routing         GPSR----> BeaconPacket received from:1
+33.424425315879 SN.node[0].Communication.Routing         GPSR ---> Updating route Table
+33.424425315879 SN.node[0].Communication.Routing         GPSR ---> RouteTable entry updated- Node [0]: [1;1;10]
+33.424425315879 SN.node[2].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+33.424425315879 SN.node[2].Communication.Routing         GPSR----> BeaconPacket received from:1
+33.424425315879 SN.node[2].Communication.Routing         GPSR ---> Updating route Table
+33.424425315879 SN.node[2].Communication.Routing         GPSR ---> RouteTable entry updated- Node [2]: [1;1;10]
+34.33074875815  SN.node[2].Communication.Routing         GPSR: ---> INTER_BEACON_T timer, Node [2], rand=0.623564
+34.331216758149 SN.node[1].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+34.331216758149 SN.node[1].Communication.Routing         GPSR----> BeaconPacket received from:2
+34.331216758149 SN.node[1].Communication.Routing         GPSR ---> Updating route Table
+34.331216758149 SN.node[1].Communication.Routing         GPSR ---> RouteTable entry updated- Node [1]: [2;1;30]
+34.331216758149 SN.node[3].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+34.331216758149 SN.node[3].Communication.Routing         GPSR----> BeaconPacket received from:2
+34.331216758149 SN.node[3].Communication.Routing         GPSR ---> Updating route Table
+34.331216758149 SN.node[3].Communication.Routing         GPSR ---> RouteTable entry updated- Node [3]: [2;1;30]
+35.858552173993 SN.node[0].Communication.Routing         GPSR: ---> INTER_BEACON_T timer, Node [0], rand=0.645894
+35.859020173992 SN.node[1].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+35.859020173992 SN.node[1].Communication.Routing         GPSR----> BeaconPacket received from:0
+35.859020173992 SN.node[1].Communication.Routing         GPSR ---> Updating route Table
+35.859020173992 SN.node[1].Communication.Routing         GPSR ---> RouteTable entry updated- Node [1]: [0;0;0]
+37.80848639554  SN.node[3].Communication.Routing         GPSR: ---> INTER_BEACON_T timer, Node [3], rand=0.384382
+37.808954395539 SN.node[2].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+37.808954395539 SN.node[2].Communication.Routing         GPSR----> BeaconPacket received from:3
+37.808954395539 SN.node[2].Communication.Routing         GPSR ---> Updating route Table
+37.808954395539 SN.node[2].Communication.Routing         GPSR ---> RouteTable entry updated- Node [2]: [3;1;50]
+44.88445634903  SN.node[1].Communication.Routing         GPSR: ---> INTER_BEACON_T timer, Node [1], rand=0.437587
+44.884924349029 SN.node[0].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+44.884924349029 SN.node[0].Communication.Routing         GPSR----> BeaconPacket received from:1
+44.884924349029 SN.node[0].Communication.Routing         GPSR ---> Updating route Table
+44.884924349029 SN.node[0].Communication.Routing         GPSR ---> RouteTable entry updated- Node [0]: [1;1;10]
+44.884924349029 SN.node[2].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+44.884924349029 SN.node[2].Communication.Routing         GPSR----> BeaconPacket received from:1
+44.884924349029 SN.node[2].Communication.Routing         GPSR ---> Updating route Table
+44.884924349029 SN.node[2].Communication.Routing         GPSR ---> RouteTable entry updated- Node [2]: [1;1;10]
+47.401105589545 SN.node[2].Communication.Routing         GPSR: ---> INTER_BEACON_T timer, Node [2], rand=0.297535
+47.401573589544 SN.node[1].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+47.401573589544 SN.node[1].Communication.Routing         GPSR----> BeaconPacket received from:2
+47.401573589544 SN.node[1].Communication.Routing         GPSR ---> Updating route Table
+47.401573589544 SN.node[1].Communication.Routing         GPSR ---> RouteTable entry updated- Node [1]: [2;1;30]
+47.401573589544 SN.node[3].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+47.401573589544 SN.node[3].Communication.Routing         GPSR----> BeaconPacket received from:2
+47.401573589544 SN.node[3].Communication.Routing         GPSR ---> Updating route Table
+47.401573589544 SN.node[3].Communication.Routing         GPSR ---> RouteTable entry updated- Node [3]: [2;1;30]
+48.952692301987 SN.node[3].Communication.Routing         GPSR: ---> INTER_BEACON_T timer, Node [3], rand=0.891773
+48.953160301986 SN.node[2].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+48.953160301986 SN.node[2].Communication.Routing         GPSR----> BeaconPacket received from:3
+48.953160301986 SN.node[2].Communication.Routing         GPSR ---> Updating route Table
+48.953160301986 SN.node[2].Communication.Routing         GPSR ---> RouteTable entry updated- Node [2]: [3;1;50]
+49.108794579991 SN.node[0].Communication.Routing         GPSR: ---> INTER_BEACON_T timer, Node [0], rand=0.056713
+49.10926257999  SN.node[1].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+49.10926257999  SN.node[1].Communication.Routing         GPSR----> BeaconPacket received from:0
+49.10926257999  SN.node[1].Communication.Routing         GPSR ---> Updating route Table
+49.10926257999  SN.node[1].Communication.Routing         GPSR ---> RouteTable entry updated- Node [1]: [0;0;0]
+56.457112070893 SN.node[1].Communication.Routing         GPSR: ---> INTER_BEACON_T timer, Node [1], rand=0.963663
+56.457580070892 SN.node[0].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+56.457580070892 SN.node[0].Communication.Routing         GPSR----> BeaconPacket received from:1
+56.457580070892 SN.node[0].Communication.Routing         GPSR ---> Updating route Table
+56.457580070892 SN.node[0].Communication.Routing         GPSR ---> RouteTable entry updated- Node [0]: [1;1;10]
+56.457580070892 SN.node[2].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+56.457580070892 SN.node[2].Communication.Routing         GPSR----> BeaconPacket received from:1
+56.457580070892 SN.node[2].Communication.Routing         GPSR ---> Updating route Table
+56.457580070892 SN.node[2].Communication.Routing         GPSR ---> RouteTable entry updated- Node [2]: [1;1;10]
+57.615844306663 SN.node[0].Communication.Routing         GPSR: ---> INTER_BEACON_T timer, Node [0], rand=0.272656
+57.616312306662 SN.node[1].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+57.616312306662 SN.node[1].Communication.Routing         GPSR----> BeaconPacket received from:0
+57.616312306662 SN.node[1].Communication.Routing         GPSR ---> Updating route Table
+57.616312306662 SN.node[1].Communication.Routing         GPSR ---> RouteTable entry updated- Node [1]: [0;0;0]
+57.846793879694 SN.node[2].Communication.Routing         GPSR: ---> INTER_BEACON_T timer, Node [2], rand=0.383442
+57.847261879693 SN.node[1].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+57.847261879693 SN.node[1].Communication.Routing         GPSR----> BeaconPacket received from:2
+57.847261879693 SN.node[1].Communication.Routing         GPSR ---> Updating route Table
+57.847261879693 SN.node[1].Communication.Routing         GPSR ---> RouteTable entry updated- Node [1]: [2;1;30]
+57.847261879693 SN.node[3].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+57.847261879693 SN.node[3].Communication.Routing         GPSR----> BeaconPacket received from:2
+57.847261879693 SN.node[3].Communication.Routing         GPSR ---> Updating route Table
+57.847261879693 SN.node[3].Communication.Routing         GPSR ---> RouteTable entry updated- Node [3]: [2;1;30]
+64.18137362203  SN.node[3].Communication.Routing         GPSR: ---> INTER_BEACON_T timer, Node [3], rand=0.477665
+64.181841622029 SN.node[2].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+64.181841622029 SN.node[2].Communication.Routing         GPSR----> BeaconPacket received from:3
+64.181841622029 SN.node[2].Communication.Routing         GPSR ---> Updating route Table
+64.181841622029 SN.node[2].Communication.Routing         GPSR ---> RouteTable entry updated- Node [2]: [3;1;50]
+67.86134202565  SN.node[0].Communication.Routing         GPSR: ---> INTER_BEACON_T timer, Node [0], rand=0.791725
+67.861810025649 SN.node[1].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+67.861810025649 SN.node[1].Communication.Routing         GPSR----> BeaconPacket received from:0
+67.861810025649 SN.node[1].Communication.Routing         GPSR ---> Updating route Table
+67.861810025649 SN.node[1].Communication.Routing         GPSR ---> RouteTable entry updated- Node [1]: [0;0;0]
+68.984068246661 SN.node[2].Communication.Routing         GPSR: ---> INTER_BEACON_T timer, Node [2], rand=0.812169
+68.98453624666  SN.node[1].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+68.98453624666  SN.node[1].Communication.Routing         GPSR----> BeaconPacket received from:2
+68.98453624666  SN.node[1].Communication.Routing         GPSR ---> Updating route Table
+68.98453624666  SN.node[1].Communication.Routing         GPSR ---> RouteTable entry updated- Node [1]: [2;1;30]
+68.98453624666  SN.node[3].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+68.98453624666  SN.node[3].Communication.Routing         GPSR----> BeaconPacket received from:2
+68.98453624666  SN.node[3].Communication.Routing         GPSR ---> Updating route Table
+68.98453624666  SN.node[3].Communication.Routing         GPSR ---> RouteTable entry updated- Node [3]: [2;1;30]
+72.264704796097 SN.node[1].Communication.Routing         GPSR: ---> INTER_BEACON_T timer, Node [1], rand=0.528895
+72.265172796096 SN.node[0].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+72.265172796096 SN.node[0].Communication.Routing         GPSR----> BeaconPacket received from:1
+72.265172796096 SN.node[0].Communication.Routing         GPSR ---> Updating route Table
+72.265172796096 SN.node[0].Communication.Routing         GPSR ---> RouteTable entry updated- Node [0]: [1;1;10]
+72.265172796096 SN.node[2].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+72.265172796096 SN.node[2].Communication.Routing         GPSR----> BeaconPacket received from:1
+72.265172796096 SN.node[2].Communication.Routing         GPSR ---> Updating route Table
+72.265172796096 SN.node[2].Communication.Routing         GPSR ---> RouteTable entry updated- Node [2]: [1;1;10]
+76.076506421923 SN.node[3].Communication.Routing         GPSR: ---> INTER_BEACON_T timer, Node [3], rand=0.479977
+76.076974421922 SN.node[2].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+76.076974421922 SN.node[2].Communication.Routing         GPSR----> BeaconPacket received from:3
+76.076974421922 SN.node[2].Communication.Routing         GPSR ---> Updating route Table
+76.076974421922 SN.node[2].Communication.Routing         GPSR ---> RouteTable entry updated- Node [2]: [3;1;50]
+82.285593743989 SN.node[0].Communication.Routing         GPSR: ---> INTER_BEACON_T timer, Node [0], rand=0.568045
+82.286061743988 SN.node[1].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+82.286061743988 SN.node[1].Communication.Routing         GPSR----> BeaconPacket received from:0
+82.286061743988 SN.node[1].Communication.Routing         GPSR ---> Updating route Table
+82.286061743988 SN.node[1].Communication.Routing         GPSR ---> RouteTable entry updated- Node [1]: [0;0;0]
+83.572773294789 SN.node[2].Communication.Routing         GPSR: ---> INTER_BEACON_T timer, Node [2], rand=0.392785
+83.573241294788 SN.node[1].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+83.573241294788 SN.node[1].Communication.Routing         GPSR----> BeaconPacket received from:2
+83.573241294788 SN.node[1].Communication.Routing         GPSR ---> Updating route Table
+83.573241294788 SN.node[1].Communication.Routing         GPSR ---> RouteTable entry updated- Node [1]: [2;1;30]
+83.573241294788 SN.node[3].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+83.573241294788 SN.node[3].Communication.Routing         GPSR----> BeaconPacket received from:2
+83.573241294788 SN.node[3].Communication.Routing         GPSR ---> Updating route Table
+83.573241294788 SN.node[3].Communication.Routing         GPSR ---> RouteTable entry updated- Node [3]: [2;1;30]
+84.572392593399 SN.node[1].Communication.Routing         GPSR: ---> INTER_BEACON_T timer, Node [1], rand=0.925597
+84.572860593398 SN.node[0].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+84.572860593398 SN.node[0].Communication.Routing         GPSR----> BeaconPacket received from:1
+84.572860593398 SN.node[0].Communication.Routing         GPSR ---> Updating route Table
+84.572860593398 SN.node[0].Communication.Routing         GPSR ---> RouteTable entry updated- Node [0]: [1;1;10]
+84.572860593398 SN.node[2].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+84.572860593398 SN.node[2].Communication.Routing         GPSR----> BeaconPacket received from:1
+84.572860593398 SN.node[2].Communication.Routing         GPSR ---> Updating route Table
+84.572860593398 SN.node[2].Communication.Routing         GPSR ---> RouteTable entry updated- Node [2]: [1;1;10]
+87.990251191142 SN.node[3].Communication.Routing         GPSR: ---> INTER_BEACON_T timer, Node [3], rand=0.836079
+87.990719191141 SN.node[2].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+87.990719191141 SN.node[2].Communication.Routing         GPSR----> BeaconPacket received from:3
+87.990719191141 SN.node[2].Communication.Routing         GPSR ---> Updating route Table
+87.990719191141 SN.node[2].Communication.Routing         GPSR ---> RouteTable entry updated- Node [2]: [3;1;50]
+94.785264850476 SN.node[2].Communication.Routing         GPSR: ---> INTER_BEACON_T timer, Node [2], rand=0.0710361
+94.785732850475 SN.node[1].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+94.785732850475 SN.node[1].Communication.Routing         GPSR----> BeaconPacket received from:2
+94.785732850475 SN.node[1].Communication.Routing         GPSR ---> Updating route Table
+94.785732850475 SN.node[1].Communication.Routing         GPSR ---> RouteTable entry updated- Node [1]: [2;1;30]
+94.785732850475 SN.node[3].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+94.785732850475 SN.node[3].Communication.Routing         GPSR----> BeaconPacket received from:2
+94.785732850475 SN.node[3].Communication.Routing         GPSR ---> Updating route Table
+94.785732850475 SN.node[3].Communication.Routing         GPSR ---> RouteTable entry updated- Node [3]: [2;1;30]
+94.909109669253 SN.node[0].Communication.Routing         GPSR: ---> INTER_BEACON_T timer, Node [0], rand=0.337396
+94.909577669252 SN.node[1].Communication.Routing         Received [GPSR Beacon routing packet] from MAC layer
+94.909577669252 SN.node[1].Communication.Routing         GPSR----> BeaconPacket received from:0
+94.909577669252 SN.node[1].Communication.Routing         GPSR ---> Updating route Table
+94.909577669252 SN.node[1].Communication.Routing         GPSR ---> RouteTable entry updated- Node [1]: [0;0;0]
+100.073550881998SN.node[1].Communication.Routing         GPSR: ---> INTER_BEACON_T timer, Node [1], rand=0.0871293

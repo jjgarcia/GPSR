@@ -1,0 +1,380 @@
+//
+// Generated file, do not edit! Created by opp_msgc 4.1 from src/node/communication/routing/GpsrRouting/GpsrBeaconPacket.msg.
+//
+
+// Disable warnings about unused variables, empty switch stmts, etc:
+#ifdef _MSC_VER
+#  pragma warning(disable:4101)
+#  pragma warning(disable:4065)
+#endif
+
+#include <iostream>
+#include <sstream>
+#include "GpsrBeaconPacket_m.h"
+
+// Template rule which fires if a struct or class doesn't have operator<<
+template<typename T>
+std::ostream& operator<<(std::ostream& out,const T&) {return out;}
+
+// Another default rule (prevents compiler from choosing base class' doPacking())
+template<typename T>
+void doPacking(cCommBuffer *, T& t) {
+    throw cRuntimeError("Parsim error: no doPacking() function for type %s or its base class (check .msg and _m.cc/h files!)",opp_typename(typeid(t)));
+}
+
+template<typename T>
+void doUnpacking(cCommBuffer *, T& t) {
+    throw cRuntimeError("Parsim error: no doUnpacking() function for type %s or its base class (check .msg and _m.cc/h files!)",opp_typename(typeid(t)));
+}
+
+
+
+
+EXECUTE_ON_STARTUP(
+    cEnum *e = cEnum::find("gpsrBeaconPacketType");
+    if (!e) enums.getInstance()->add(e = new cEnum("gpsrBeaconPacketType"));
+    e->insert(BEACON_PACKET, "BEACON_PACKET");
+    e->insert(GREEDY_SOLICIT, "GREEDY_SOLICIT");
+);
+
+Register_Class(GpsrBeaconPacket);
+
+GpsrBeaconPacket::GpsrBeaconPacket(const char *name, int kind) : RoutingPacket(name,kind)
+{
+    this->gpsrRoutingControlMessageKind_var = 0;
+    this->TTL_var = 0;
+    this->source_var = 0;
+    this->destination_var = 0;
+    this->source_X_Coordinate_var = 0;
+    this->source_Y_Coordinate_var = 0;
+}
+
+GpsrBeaconPacket::GpsrBeaconPacket(const GpsrBeaconPacket& other) : RoutingPacket()
+{
+    setName(other.getName());
+    operator=(other);
+}
+
+GpsrBeaconPacket::~GpsrBeaconPacket()
+{
+}
+
+GpsrBeaconPacket& GpsrBeaconPacket::operator=(const GpsrBeaconPacket& other)
+{
+    if (this==&other) return *this;
+    RoutingPacket::operator=(other);
+    this->gpsrRoutingControlMessageKind_var = other.gpsrRoutingControlMessageKind_var;
+    this->TTL_var = other.TTL_var;
+    this->source_var = other.source_var;
+    this->destination_var = other.destination_var;
+    this->source_X_Coordinate_var = other.source_X_Coordinate_var;
+    this->source_Y_Coordinate_var = other.source_Y_Coordinate_var;
+    return *this;
+}
+
+void GpsrBeaconPacket::parsimPack(cCommBuffer *b)
+{
+    RoutingPacket::parsimPack(b);
+    doPacking(b,this->gpsrRoutingControlMessageKind_var);
+    doPacking(b,this->TTL_var);
+    doPacking(b,this->source_var);
+    doPacking(b,this->destination_var);
+    doPacking(b,this->source_X_Coordinate_var);
+    doPacking(b,this->source_Y_Coordinate_var);
+}
+
+void GpsrBeaconPacket::parsimUnpack(cCommBuffer *b)
+{
+    RoutingPacket::parsimUnpack(b);
+    doUnpacking(b,this->gpsrRoutingControlMessageKind_var);
+    doUnpacking(b,this->TTL_var);
+    doUnpacking(b,this->source_var);
+    doUnpacking(b,this->destination_var);
+    doUnpacking(b,this->source_X_Coordinate_var);
+    doUnpacking(b,this->source_Y_Coordinate_var);
+}
+
+int GpsrBeaconPacket::getGpsrRoutingControlMessageKind() const
+{
+    return gpsrRoutingControlMessageKind_var;
+}
+
+void GpsrBeaconPacket::setGpsrRoutingControlMessageKind(int gpsrRoutingControlMessageKind_var)
+{
+    this->gpsrRoutingControlMessageKind_var = gpsrRoutingControlMessageKind_var;
+}
+
+int GpsrBeaconPacket::getTTL() const
+{
+    return TTL_var;
+}
+
+void GpsrBeaconPacket::setTTL(int TTL_var)
+{
+    this->TTL_var = TTL_var;
+}
+
+const char * GpsrBeaconPacket::getSource() const
+{
+    return source_var.c_str();
+}
+
+void GpsrBeaconPacket::setSource(const char * source_var)
+{
+    this->source_var = source_var;
+}
+
+const char * GpsrBeaconPacket::getDestination() const
+{
+    return destination_var.c_str();
+}
+
+void GpsrBeaconPacket::setDestination(const char * destination_var)
+{
+    this->destination_var = destination_var;
+}
+
+double GpsrBeaconPacket::getSource_X_Coordinate() const
+{
+    return source_X_Coordinate_var;
+}
+
+void GpsrBeaconPacket::setSource_X_Coordinate(double source_X_Coordinate_var)
+{
+    this->source_X_Coordinate_var = source_X_Coordinate_var;
+}
+
+double GpsrBeaconPacket::getSource_Y_Coordinate() const
+{
+    return source_Y_Coordinate_var;
+}
+
+void GpsrBeaconPacket::setSource_Y_Coordinate(double source_Y_Coordinate_var)
+{
+    this->source_Y_Coordinate_var = source_Y_Coordinate_var;
+}
+
+class GpsrBeaconPacketDescriptor : public cClassDescriptor
+{
+  public:
+    GpsrBeaconPacketDescriptor();
+    virtual ~GpsrBeaconPacketDescriptor();
+
+    virtual bool doesSupport(cObject *obj) const;
+    virtual const char *getProperty(const char *propertyname) const;
+    virtual int getFieldCount(void *object) const;
+    virtual const char *getFieldName(void *object, int field) const;
+    virtual int findField(void *object, const char *fieldName) const;
+    virtual unsigned int getFieldTypeFlags(void *object, int field) const;
+    virtual const char *getFieldTypeString(void *object, int field) const;
+    virtual const char *getFieldProperty(void *object, int field, const char *propertyname) const;
+    virtual int getArraySize(void *object, int field) const;
+
+    virtual std::string getFieldAsString(void *object, int field, int i) const;
+    virtual bool setFieldAsString(void *object, int field, int i, const char *value) const;
+
+    virtual const char *getFieldStructName(void *object, int field) const;
+    virtual void *getFieldStructPointer(void *object, int field, int i) const;
+};
+
+Register_ClassDescriptor(GpsrBeaconPacketDescriptor);
+
+GpsrBeaconPacketDescriptor::GpsrBeaconPacketDescriptor() : cClassDescriptor("GpsrBeaconPacket", "RoutingPacket")
+{
+}
+
+GpsrBeaconPacketDescriptor::~GpsrBeaconPacketDescriptor()
+{
+}
+
+bool GpsrBeaconPacketDescriptor::doesSupport(cObject *obj) const
+{
+    return dynamic_cast<GpsrBeaconPacket *>(obj)!=NULL;
+}
+
+const char *GpsrBeaconPacketDescriptor::getProperty(const char *propertyname) const
+{
+    cClassDescriptor *basedesc = getBaseClassDescriptor();
+    return basedesc ? basedesc->getProperty(propertyname) : NULL;
+}
+
+int GpsrBeaconPacketDescriptor::getFieldCount(void *object) const
+{
+    cClassDescriptor *basedesc = getBaseClassDescriptor();
+    return basedesc ? 6+basedesc->getFieldCount(object) : 6;
+}
+
+unsigned int GpsrBeaconPacketDescriptor::getFieldTypeFlags(void *object, int field) const
+{
+    cClassDescriptor *basedesc = getBaseClassDescriptor();
+    if (basedesc) {
+        if (field < basedesc->getFieldCount(object))
+            return basedesc->getFieldTypeFlags(object, field);
+        field -= basedesc->getFieldCount(object);
+    }
+    static unsigned int fieldTypeFlags[] = {
+        FD_ISEDITABLE,
+        FD_ISEDITABLE,
+        FD_ISEDITABLE,
+        FD_ISEDITABLE,
+        FD_ISEDITABLE,
+        FD_ISEDITABLE,
+    };
+    return (field>=0 && field<6) ? fieldTypeFlags[field] : 0;
+}
+
+const char *GpsrBeaconPacketDescriptor::getFieldName(void *object, int field) const
+{
+    cClassDescriptor *basedesc = getBaseClassDescriptor();
+    if (basedesc) {
+        if (field < basedesc->getFieldCount(object))
+            return basedesc->getFieldName(object, field);
+        field -= basedesc->getFieldCount(object);
+    }
+    static const char *fieldNames[] = {
+        "gpsrRoutingControlMessageKind",
+        "TTL",
+        "source",
+        "destination",
+        "source_X_Coordinate",
+        "source_Y_Coordinate",
+    };
+    return (field>=0 && field<6) ? fieldNames[field] : NULL;
+}
+
+int GpsrBeaconPacketDescriptor::findField(void *object, const char *fieldName) const
+{
+    cClassDescriptor *basedesc = getBaseClassDescriptor();
+    int base = basedesc ? basedesc->getFieldCount(object) : 0;
+    if (fieldName[0]=='g' && strcmp(fieldName, "gpsrRoutingControlMessageKind")==0) return base+0;
+    if (fieldName[0]=='T' && strcmp(fieldName, "TTL")==0) return base+1;
+    if (fieldName[0]=='s' && strcmp(fieldName, "source")==0) return base+2;
+    if (fieldName[0]=='d' && strcmp(fieldName, "destination")==0) return base+3;
+    if (fieldName[0]=='s' && strcmp(fieldName, "source_X_Coordinate")==0) return base+4;
+    if (fieldName[0]=='s' && strcmp(fieldName, "source_Y_Coordinate")==0) return base+5;
+    return basedesc ? basedesc->findField(object, fieldName) : -1;
+}
+
+const char *GpsrBeaconPacketDescriptor::getFieldTypeString(void *object, int field) const
+{
+    cClassDescriptor *basedesc = getBaseClassDescriptor();
+    if (basedesc) {
+        if (field < basedesc->getFieldCount(object))
+            return basedesc->getFieldTypeString(object, field);
+        field -= basedesc->getFieldCount(object);
+    }
+    static const char *fieldTypeStrings[] = {
+        "int",
+        "int",
+        "string",
+        "string",
+        "double",
+        "double",
+    };
+    return (field>=0 && field<6) ? fieldTypeStrings[field] : NULL;
+}
+
+const char *GpsrBeaconPacketDescriptor::getFieldProperty(void *object, int field, const char *propertyname) const
+{
+    cClassDescriptor *basedesc = getBaseClassDescriptor();
+    if (basedesc) {
+        if (field < basedesc->getFieldCount(object))
+            return basedesc->getFieldProperty(object, field, propertyname);
+        field -= basedesc->getFieldCount(object);
+    }
+    switch (field) {
+        case 0:
+            if (!strcmp(propertyname,"enum")) return "gpsrBeaconPacketType";
+            return NULL;
+        default: return NULL;
+    }
+}
+
+int GpsrBeaconPacketDescriptor::getArraySize(void *object, int field) const
+{
+    cClassDescriptor *basedesc = getBaseClassDescriptor();
+    if (basedesc) {
+        if (field < basedesc->getFieldCount(object))
+            return basedesc->getArraySize(object, field);
+        field -= basedesc->getFieldCount(object);
+    }
+    GpsrBeaconPacket *pp = (GpsrBeaconPacket *)object; (void)pp;
+    switch (field) {
+        default: return 0;
+    }
+}
+
+std::string GpsrBeaconPacketDescriptor::getFieldAsString(void *object, int field, int i) const
+{
+    cClassDescriptor *basedesc = getBaseClassDescriptor();
+    if (basedesc) {
+        if (field < basedesc->getFieldCount(object))
+            return basedesc->getFieldAsString(object,field,i);
+        field -= basedesc->getFieldCount(object);
+    }
+    GpsrBeaconPacket *pp = (GpsrBeaconPacket *)object; (void)pp;
+    switch (field) {
+        case 0: return long2string(pp->getGpsrRoutingControlMessageKind());
+        case 1: return long2string(pp->getTTL());
+        case 2: return oppstring2string(pp->getSource());
+        case 3: return oppstring2string(pp->getDestination());
+        case 4: return double2string(pp->getSource_X_Coordinate());
+        case 5: return double2string(pp->getSource_Y_Coordinate());
+        default: return "";
+    }
+}
+
+bool GpsrBeaconPacketDescriptor::setFieldAsString(void *object, int field, int i, const char *value) const
+{
+    cClassDescriptor *basedesc = getBaseClassDescriptor();
+    if (basedesc) {
+        if (field < basedesc->getFieldCount(object))
+            return basedesc->setFieldAsString(object,field,i,value);
+        field -= basedesc->getFieldCount(object);
+    }
+    GpsrBeaconPacket *pp = (GpsrBeaconPacket *)object; (void)pp;
+    switch (field) {
+        case 0: pp->setGpsrRoutingControlMessageKind(string2long(value)); return true;
+        case 1: pp->setTTL(string2long(value)); return true;
+        case 2: pp->setSource((value)); return true;
+        case 3: pp->setDestination((value)); return true;
+        case 4: pp->setSource_X_Coordinate(string2double(value)); return true;
+        case 5: pp->setSource_Y_Coordinate(string2double(value)); return true;
+        default: return false;
+    }
+}
+
+const char *GpsrBeaconPacketDescriptor::getFieldStructName(void *object, int field) const
+{
+    cClassDescriptor *basedesc = getBaseClassDescriptor();
+    if (basedesc) {
+        if (field < basedesc->getFieldCount(object))
+            return basedesc->getFieldStructName(object, field);
+        field -= basedesc->getFieldCount(object);
+    }
+    static const char *fieldStructNames[] = {
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+    };
+    return (field>=0 && field<6) ? fieldStructNames[field] : NULL;
+}
+
+void *GpsrBeaconPacketDescriptor::getFieldStructPointer(void *object, int field, int i) const
+{
+    cClassDescriptor *basedesc = getBaseClassDescriptor();
+    if (basedesc) {
+        if (field < basedesc->getFieldCount(object))
+            return basedesc->getFieldStructPointer(object, field, i);
+        field -= basedesc->getFieldCount(object);
+    }
+    GpsrBeaconPacket *pp = (GpsrBeaconPacket *)object; (void)pp;
+    switch (field) {
+        default: return NULL;
+    }
+}
+
+

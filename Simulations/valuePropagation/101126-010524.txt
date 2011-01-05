@@ -1,0 +1,49 @@
+Castalia| what:General
+Castalia| when:2010-11-26 01:05
+Castalia| label:General
+Castalia|	module:SN.node[0].ResourceManager
+Castalia|		simple output name:Consumed Energy
+Castalia|			6.80494 
+Castalia|	module:SN.node[0].Communication.Radio
+Castalia|		simple output name:RX pkt breakdown
+Castalia|			8 Failed, below sensitivity
+Castalia|			7 Received with NO interference
+Castalia|		simple output name:TXed pkts
+Castalia|			8 TX pkts
+Castalia|	module:SN.node[0].Application
+Castalia|		simple output name:got value
+Castalia|			0 yes/no
+Castalia|	module:SN.node[1].ResourceManager
+Castalia|		simple output name:Consumed Energy
+Castalia|			6.80495 
+Castalia|	module:SN.node[1].Communication.Radio
+Castalia|		simple output name:RX pkt breakdown
+Castalia|			16 Received with NO interference
+Castalia|		simple output name:TXed pkts
+Castalia|			7 TX pkts
+Castalia|	module:SN.node[1].Application
+Castalia|		simple output name:got value
+Castalia|			0 yes/no
+Castalia|	module:SN.node[2].ResourceManager
+Castalia|		simple output name:Consumed Energy
+Castalia|			6.80494 
+Castalia|	module:SN.node[2].Communication.Radio
+Castalia|		simple output name:RX pkt breakdown
+Castalia|			8 Failed, below sensitivity
+Castalia|			14 Received with NO interference
+Castalia|		simple output name:TXed pkts
+Castalia|			8 TX pkts
+Castalia|	module:SN.node[2].Application
+Castalia|		simple output name:got value
+Castalia|			0 yes/no
+Castalia|	module:SN.node[3].ResourceManager
+Castalia|		simple output name:Consumed Energy
+Castalia|			6.80495 
+Castalia|	module:SN.node[3].Communication.Radio
+Castalia|		simple output name:RX pkt breakdown
+Castalia|			8 Received with NO interference
+Castalia|		simple output name:TXed pkts
+Castalia|			7 TX pkts
+Castalia|	module:SN.node[3].Application
+Castalia|		simple output name:got value
+Castalia|			0 yes/no

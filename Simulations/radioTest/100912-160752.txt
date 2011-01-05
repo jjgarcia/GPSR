@@ -1,0 +1,16 @@
+Castalia| what:General
+Castalia| when:2010-09-12 16:07
+Castalia| label:General
+Assigned runID=General-0-20100912-16:07:52-17237
+Setting up network `SN'...
+Initializing...
+
+Running simulation...
+** Event #1   T=0   Elapsed: 0.000s (0m 00s)  0% completed   ev/sec=0
+** Event #6   T=0.003536268058   Elapsed: 0.000s (0m 00s)  0% completed   ev/sec=0
+
+<!> Error in module (GpsrRouting) SN.node[1].Communication.Routing (id=22) at event #6, t=0.003536268058: check_and_cast(): cannot cast NULL pointer to type 'VirtualMobilityManager *'.
+
+undisposed object: (cMessage) SN.node[1].Communication.Routing.Communication [STARTUP] -- check module destructor
+
+End.

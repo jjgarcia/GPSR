@@ -1,0 +1,10 @@
+Castalia| what:General
+Castalia| when:2010-09-09 23:32
+Castalia| label:General
+Assigned runID=General-0-20100909-23:32:39-8076
+Setting up network `SN'...
+
+<!> Error in module (GpsrRouting) SN.node[0].Communication.Routing (id=20) during network setup: The simulation wanted to ask a question, set cmdenv-interactive=true to allow it: "Enter parameter `SN.node[0].Communication.Routing.coreFrameworkDebugSwitch' (unassigned):".
+
+
+End.
